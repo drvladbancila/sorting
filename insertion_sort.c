@@ -8,7 +8,7 @@ int main()
     int val;
 
     for (n = 0; n < N; n++) {
-        printf("Insert a number: ");
+        printf("Insert %d numbers: ", N);
         scanf("%d", &val);
 
         for (j = n - 1; val < v[j] && j >= 0; j--) {
@@ -17,7 +17,7 @@ int main()
         v[j + 1] = val;
     }
 
-    printf("VET: ");
+    printf("Sorted array: ");
     for (j = 0; j < N; j++) {
         printf("%d ", v[j]);
     }
